@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Font Link ['roboto', 'roboto slab'] -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap css cdn  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Fontawesome Css  -->
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+
+    <!-- Main Style Css  -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Responsive Style Css  -->
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- Start Navbar Section-->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <!-- navbar left  -->
+        <div class="navbar_left">
+          <a class="navbar-brand" href="#"
+            ><img src="images/logo.png" alt="logo" class="img-fluid"
+          /></a>
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Create Order</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Order List</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Order Status</a>
+            </li>
+          </ul>
+        </div>
+        <!-- navbar right  -->
+        <div class="navbar_right">
+          <span class="navbar_bar"><i class="fas fa-bars"></i></span>
+          <span class="bel"><i class="fa-regular fa-bell"></i></span>
+          <img
+            src="images/profile.png"
+            alt=""
+            class="img-fluid profile-image w-100"
+          />
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar Section-->
+
+    <!-- Start Topbar Section  -->
+    <div class="topbar">
+      <div class="tb_title tb_title_hide">
+        <h4>Module List</h4>
+      </div>
+      <div class="tb_item">
+        <ul class="top-item">
+          <li>
+            <a href="" class="btn filter-btn"
+              ><i class="fa-solid fa-filter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="create.html" class="btn">Create</a>
+          </li>
+
+          <li>
+            <a href="" class="btn import-btn">Import</a>
+          </li>
+          <li>
+            <a href="" class="btn export-btn">Export</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Topbar Section  -->
+
+    <div class="main">
+      <div class="sidebar">
+        <ul>
+          <li class="sidebar-item active">
+            <a href="">
+              <span class="sidebar-icon">
+                <i class="fas fa-clipboard-user"></i>
+              </span>
+              <h6 class="sidebar_text sidebar_text_hide">Order</h6>
+            </a>
+          </li>
+
+          <li class="sidebar-item">
+            <a href="">
+              <span class="sidebar-icon">
+                <i class="fa-solid fa-chart-column"></i>
+              </span>
+              <h6 class="sidebar_text sidebar_text_hide">Sales</h6>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="">
+              <span class="sidebar-icon">
+                <i class="fa-solid fa-clipboard-check"></i>
+              </span>
+              <h6 class="sidebar_text sidebar_text_hide">Inventory</h6>
+            </a>
+          </li>
+
+          <li class="sidebar-item">
+            <a href="">
+              <span class="sidebar-icon">
+                <i class="fa-solid fa-calculator"></i>
+              </span>
+              <h6 class="sidebar_text sidebar_text_hide">Accounting</h6>
+            </a>
+          </li>
+
+          <li class="sidebar-item">
+            <a href="">
+              <span class="sidebar-icon">
+                <i class="fa-solid fa-truck"></i>
+              </span>
+              <h6 class="sidebar_text sidebar_text_hide">Delivery</h6>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="">
+              <span class="sidebar-icon">
+                <i class="fa-solid fa-gear"></i>
+              </span>
+              <h6 class="sidebar_text sidebar_text_hide">Services</h6>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="">
+              <span class="sidebar-icon">
+                <i class="fa-solid fa-credit-card"></i>
+              </span>
+              <h6 class="sidebar_text sidebar_text_hide">Credit Management</h6>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <h1>main-content</h1>
+      </div>
+    </div>
+
+    <!-- bootstrap js cdn  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

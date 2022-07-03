@@ -1,0 +1,649 @@
+/* 
+* root
+* Common Css
+* Button Css
+* Bootstrap css customaize
+* Navbar
+* Sidebar
+* top Item
+* Table
+* Bread Cump 
+* Form 
+* Pagination
+*
+ */
+
+/* Root  */
+:root {
+  --main-color: #0066ff;
+  --white-color: #fff;
+  --ass-color: #f4f5f7;
+  --roboto: "Roboto", sans-serif;
+  --roboto-slab: "Roboto Slab", serif;
+}
+
+/*============================
+ Common Css Start  
+ =============================*/
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+html {
+  font-size: 14px;
+}
+body {
+  background: var(--ass-color);
+  color: #49545c;
+  font-family: var(--roboto);
+  /* font-size: 15px; */
+  font-weight: 400;
+  overflow: hidden;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+table {
+  /* height: 82vh; */
+  display: block;
+  margin-bottom: 0;
+}
+
+tbody {
+  overflow-y: scroll;
+  height: 70vh;
+  position: absolute;
+}
+
+tr {
+  width: 100%;
+  display: inline-table;
+  table-layout: fixed;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-style: none;
+}
+
+.mandatory {
+  color: red;
+}
+.table_check {
+  line-height: 100%;
+}
+.w_3 {
+  width: 3%;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxx
+ Common Css End 
+ xxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+/*============================
+ Button pert start  
+ =============================*/
+.btn {
+  font-family: var(--roboto);
+  font-weight: 400;
+  font-size: 12px;
+  color: #ffffff;
+  border-radius: 5px;
+  background: #017e84;
+  margin: 0 2px;
+  padding: 5px 15px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  border: none;
+  transition: all linear 0.3s;
+}
+
+.btn:hover {
+  background: #017e84;
+  color: #fff;
+}
+
+.export-btn,
+.filter-btn,
+.export-btn:focus,
+.filter-btn:focus {
+  background: #2c3e50;
+  color: #fff;
+}
+
+.export-btn:hover,
+.filter-btn:hover {
+  background: #192633;
+  color: #fff;
+}
+
+.search-btn,
+.search-btn:focus {
+  background: #dd636e;
+  color: #fff;
+}
+
+.search-btn:hover {
+  background: #d6515c;
+}
+
+.import-btn,
+.import-btn:focus {
+  background: #666666;
+  color: #fff;
+}
+
+.import-btn:hover {
+  background: #3f3f3f;
+  color: #fff;
+}
+
+.discard-btn,
+.discard-btn:focus {
+  background: #f8425f;
+  color: #fff;
+}
+
+.discard-btn:hover {
+  background: #f72145;
+  color: #fff;
+}
+
+.save-btn,
+.create-btn,
+.save-btn:focus,
+.create-btn:focus {
+  background: #3094fa;
+  color: #fff;
+}
+
+.create-btn:hover,
+.save-btn:hover {
+  background: #117fec;
+  color: #fff;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxx 
+Button pert end  
+xxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+/*==============================
+ Bootstrap css customaize  start 
+ ==============================*/
+.row {
+  --bs-gutter-x: 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.navbar-brand {
+  margin-right: 0.5rem;
+}
+/* form pert  */
+.form-control {
+  background-color: #edf0f4;
+  border: none;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.form-control:focus {
+  background-color: #edf0f4;
+  box-shadow: 0 0 0 2px rgba(0, 102, 255, 0.548);
+}
+.form-label,
+.details-label {
+  color: #737b7d;
+  font-weight: 500;
+  font-size: 13px;
+  padding-top: 15px;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--bs-heading-color);
+}
+
+p {
+  margin-bottom: 0;
+}
+.sd {
+  position: fixed;
+  top: 91px;
+  left: 0;
+}
+.mc {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+
+/* bootstrap css customaize  end*/
+
+/*=============================
+ Start Navbar Css  
+ ===============================*/
+
+/* new  */
+.navbar_left,
+.navbar_right {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+/* new end  */
+
+.navbar {
+  background: var(--main-color);
+  color: var(--white-color);
+  padding: 0;
+}
+
+.nav-link {
+  color: var(--white-color);
+  font-family: var(--roboto-slab);
+  font-weight: 600;
+  font-size: 15px;
+  margin: 0 7px;
+}
+
+.nav-link:hover {
+  color: var(--white-color);
+}
+
+.bar .fa-bars {
+  font-size: 1.6rem;
+  margin: 10px;
+}
+
+.navbar_right .bel {
+  font-size: 1.8rem;
+  position: relative;
+  margin: auto;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.navbar_right .navbar_bar {
+  font-size: 1.6rem;
+  margin: auto;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.bel::after {
+  position: absolute;
+  content: "";
+  background: red;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  top: 7px;
+  right: 0;
+  border: 2px solid transparent;
+}
+
+.navbar_right .profile-image {
+  border-radius: 50%;
+  width: 50px;
+  height: 3.5rem;
+}
+
+.dropdown-toggle {
+  background: none;
+  border: none;
+}
+
+.dropdown-toggle::after {
+  border: none;
+}
+
+/* End Navbar Css  */
+
+.main {
+  width: 100%;
+  margin-top: 6.5rem;
+  position: absolute;
+  display: flex;
+}
+
+/* Sidebar  css start  */
+.sidebar {
+  transition: all linear 0.3s;
+}
+
+.sidebar-icon {
+  border-radius: 50%;
+  line-height: 2.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.sidebar_text {
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: #2c3e50;
+  margin: auto;
+  margin-left: 0.75rem;
+  width: 11.9rem;
+  transition: all linear 0.4s;
+}
+.sidebar_text_hide {
+  width: 0;
+  transition: all linear 0.4s;
+  overflow: hidden;
+}
+
+/* icon background  */
+.sidebar ul li:nth-child(1) .sidebar-icon {
+  background: #c5dcfa;
+  color: #0f56b3;
+}
+.sidebar ul li:nth-child(2) .sidebar-icon {
+  background: #c5f2c7;
+  color: #1f8b24;
+}
+.sidebar ul li:nth-child(3) .sidebar-icon {
+  background: #fbe5c9;
+  color: #bf710f;
+}
+.sidebar ul li:nth-child(4) .sidebar-icon {
+  background: #ecb9f9;
+  color: #730c8f;
+}
+.sidebar ul li:nth-child(5) .sidebar-icon {
+  background: #ffea80;
+  color: #ff8500;
+}
+.sidebar ul li:nth-child(6) .sidebar-icon {
+  background: #d1e3ff;
+  color: #337ab7;
+}
+.sidebar ul li:nth-child(7) .sidebar-icon {
+  background: #7cc4d6;
+  color: #fbfdff;
+}
+
+/* Sidebar css end  */
+
+/* content css start  */
+.content {
+  background: #fff;
+  width: 100%;
+  display: flex;
+  height: 85vh;
+}
+
+/* content css end  */
+
+/*================================= 
+Sidebar Css Start  
+===================================*/
+
+.sidebar-item a {
+  display: flex;
+  text-decoration: none;
+  padding: 0.75rem;
+  padding-right: 2px;
+}
+.sidebar-item {
+  transition: all linear 0.4s;
+}
+
+.sidebar-item:hover,
+.sidebar .active {
+  background: rgba(222, 238, 255, 0.7);
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ Sidebar Css End  
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+/*=======================
+ Top item css Start  
+=========================*/
+.topbar {
+  position: fixed;
+  top: 3.5rem;
+  left: 0;
+  right: 0;
+  background: #f4f5f7;
+  display: flex;
+  justify-content: space-between;
+  height: 3rem;
+  z-index: 1;
+}
+.tb_title,
+.tb_item {
+  margin: auto 0;
+}
+.tb_breadcrump {
+  width: 60rem;
+}
+.tb_item {
+  line-height: 3rem;
+  width: 100%;
+}
+
+.tb_title {
+  width: 18rem;
+  text-align: center;
+  background: #fff;
+  overflow: hidden;
+  transition: all linear 0.4s;
+  white-space: nowrap;
+}
+.tb_title_hide {
+  width: 0;
+}
+
+.tb_title h4 {
+  line-height: 3rem;
+  color: #3094fa;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+.top-item {
+  display: flex;
+  justify-content: end;
+}
+
+.top-item li {
+  position: relative;
+}
+.search-input {
+  position: absolute;
+  top: 0;
+  right: 50px;
+  display: none;
+}
+.search-input input {
+  position: relative;
+  border-radius: 8px;
+  width: 230px;
+  font-size: 12px;
+  padding: 6px 0px 6px 35px;
+  border: none;
+  color: #6a6a6a;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+/* main content css start  */
+.main-content {
+  background: var(--white-color);
+  overflow: auto;
+  height: 100vh;
+}
+.table-main-content {
+  background-color: var(--white-color);
+}
+
+/*===================== table css start  ===================*/
+table td,
+.table-striped > tbody > tr:nth-of-type(2n + 1) > * {
+  color: #49545c;
+  font-size: 12px;
+  vertical-align: middle;
+}
+table th {
+  color: #49545c;
+  font-size: 12px;
+  font-weight: 600;
+}
+.w_50 {
+  width: 50px;
+}
+
+.table-icon {
+  text-align: center;
+  color: #3094fa;
+}
+.fa-paperclip,
+.fa-pen,
+.fa-angle-down {
+  color: #3094fa;
+  cursor: pointer;
+}
+
+.action-item {
+  font-size: 12px;
+  color: rgb(83, 83, 83);
+}
+
+/* remove table scroll bar  */
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb {
+  background-color: #0048ff;
+}
+
+/*================= bread cump  ====================*/
+.breadcrumb {
+  margin: auto;
+  line-height: 3rem;
+  padding-left: 1.2rem;
+}
+.breadcrumb-item.active,
+.breadcrumb-item {
+  color: #0066ff;
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 13px;
+  cursor: pointer;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  color: #0066ff;
+}
+
+/*=================== form css start  ====================*/
+.first-input {
+  margin-left: 35px;
+}
+
+.image-update img {
+  border: 1px solid black;
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  margin-bottom: 10px;
+}
+.image-update p {
+  color: #737b7d;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/*==================== Pagination ===================  */
+.pagination {
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  padding: 5px 0;
+  margin: 0 auto;
+}
+
+.pagination ul {
+  margin: auto;
+}
+.pagination ul li {
+  display: inline-block;
+}
+
+.pagination button {
+  border: none;
+  background: transparent;
+  font-size: 13px;
+  cursor: normal;
+  margin: 0 3px;
+}
+.pagination .next,
+.pagination .prev {
+  background: #06f;
+  color: #fff;
+  padding: 3px 13px;
+  border-radius: 3px;
+}
+
+.details-value {
+  font-size: 12px;
+}
+
+/* new  */
+.form_section {
+  display: flex;
+  margin: 0 3rem;
+  width: 100%;
+}
+.form_col {
+  width: 33.33%;
+}
+
+.form_item {
+  margin: 0 3rem;
+}
