@@ -1,3 +1,5 @@
+@media screen and (max-width: 1200px) {
+}
 /* For Desktop View */
 @media screen and (min-width: 1024px) {
   .navbar_right .navbar_bar {
@@ -25,6 +27,57 @@
   .navbar-nav li:hover {
     background: #8594ff2e;
   }
+}
+@media screen and (max-width: 900px) {
+}
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (min-width: 601px) {
+  .dr {
+    display: flex !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .form_section {
+    display: block;
+  }
+
+  .form_col {
+    width: 92%;
+  }
+
+  .tb_breadcrump {
+    display: none;
+  }
+
+  .tb_title {
+    display: none;
+  }
+
+  .form_item {
+    padding-bottom: 2%;
+  }
+  .hide {
+    display: inline-block;
+  }
+  .dr {
+    display: none;
+    position: absolute;
+    background: #dddddd;
+    top: 3.5rem;
+    right: 8px;
+    width: auto;
+    /* text-align: center; */
+    border-radius: 4px;
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+}
+@media screen and (max-width: 320px) {
 }
 
 /* 320px
