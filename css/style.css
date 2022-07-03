@@ -53,8 +53,8 @@ ol {
   padding-left: 0;
   margin-bottom: 0;
 }
-/* 
-table {
+
+/* table {
   display: block;
   margin-bottom: 0;
 }
@@ -79,6 +79,18 @@ thead,
 tr {
   border-style: none;
 } */
+
+/* new  */
+thead {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 1;
+}
+th,
+td {
+  white-space: nowrap;
+}
 
 .mandatory {
   color: red;
@@ -528,12 +540,12 @@ Sidebar Css Start
 table td,
 .table-striped > tbody > tr:nth-of-type(2n + 1) > * {
   color: #49545c;
-  font-size: 12px;
+  font-size: 0.75rem;
   vertical-align: middle;
 }
 table th {
   color: #49545c;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 600;
 }
 .w_50 {
@@ -565,6 +577,18 @@ table th {
 }
 ::-webkit-scrollbar-thumb {
   background-color: #0048ff;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 3px;
+}
+::-webkit-scrollbar-track:horizontal {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb:horizontal {
+  background-color: #0048ff;
+  border-radius: 20px;
 }
 
 /*================= bread cump  ====================*/
@@ -607,9 +631,10 @@ table th {
 .pagination {
   background: #fff;
   position: fixed;
-  bottom: 0;
+  bottom: 0px;
   padding: 5px 0;
   margin: 0 auto;
+  width: 100%;
 }
 
 .pagination ul {
@@ -659,3 +684,18 @@ table th {
 .table_section {
   width: 100%;
 }
+.check_box {
+  width: 0.9rem;
+  height: 0.9rem;
+}
+
+/* .modal.show .modal-dialog {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.modal.fade .modal-dialog {
+  transition: transform 0.3s ease-out;
+  transform: translate(0, -50%);
+  top: 50%;
+} */
