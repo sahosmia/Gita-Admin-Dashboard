@@ -269,6 +269,7 @@ p {
   border-radius: 50%;
   width: 50px;
   height: 3.5rem;
+  position: relative;
 }
 
 /*=========================== End Navbar Css =============================*/
@@ -469,6 +470,9 @@ p {
   height: 81vh;
   overflow: auto;
 }
+.content_section {
+  margin: 2%;
+}
 
 .table_section {
   width: 100%;
@@ -643,3 +647,83 @@ td {
 }
 
 /*============================== Modal End ============================== */
+
+/*============================== Profile card Start ========================= */
+.profile_card {
+  position: absolute;
+  top: 49px;
+  right: 10px;
+  background: #fff;
+  border-radius: 2px;
+  padding: 7px 0;
+  border: 1px solid #dadce0;
+  width: 20rem;
+  display: none;
+}
+
+.auth_card {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.auth_card h3 {
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+.pt_15 {
+  padding-top: 15px;
+}
+
+.sign_out_btn {
+  border: 1px solid #dadce0;
+  background: transparent;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: normal;
+  text-overflow: ellipsis;
+}
+.sign_out_btn:hover {
+  background: rgb(250, 250, 250);
+}
+
+.auth_option {
+  border-bottom: 1px solid #dadce0;
+  transition: all 0.4s;
+}
+.auth_option:hover {
+  background-color: rgb(241, 241, 241);
+}
+.auth_option:first-child {
+  border-top: 1px solid #dadce0;
+}
+.auth_option_item {
+  color: #3c4043;
+  letter-spacing: 0.25px;
+  font-size: 12px !important;
+  text-decoration: none;
+  padding: 5px 33px;
+}
+
+.auth_option_item:hover {
+  color: #3c4043 !important;
+}
+
+.auth_option_item i {
+  font-size: 12px !important;
+  padding-right: 10px;
+}
+.auth_email {
+  font-size: 12px;
+}
+.auth_img {
+  border-radius: 50%;
+  border: 1px solid rgb(189, 189, 189);
+  width: 50px;
+  margin: 0 auto;
+}
+
+/*============================== Profile Card End ========================= */
