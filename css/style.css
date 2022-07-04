@@ -16,8 +16,10 @@
 /* Root  */
 :root {
   --main-color: #0066ff;
+  --secendary-main-color: #3094fa;
   --white-color: #fff;
-  --ass-color: #f4f5f7;
+  --semi-white-color: #f4f5f7;
+  --ass-color: #49545c;
   --roboto: "Roboto", sans-serif;
   --roboto-slab: "Roboto Slab", serif;
 }
@@ -34,10 +36,9 @@ html {
   font-size: 14px;
 }
 body {
-  background: var(--ass-color);
-  color: #49545c;
+  background: var(--semi-white-color);
+  color: var(--ass-color);
   font-family: var(--roboto);
-  /* font-size: 15px; */
   font-weight: 400;
   overflow: hidden;
   position: relative;
@@ -54,71 +55,26 @@ ol {
   margin-bottom: 0;
 }
 
-/* table {
-  display: block;
-  margin-bottom: 0;
-}
-
-tbody {
-  overflow-y: scroll;
-  height: 70vh;
-  position: absolute;
-}
-
-tr {
-  width: 100%;
-  display: inline-table;
-  table-layout: fixed;
-}
-
-tbody,
-td,
-tfoot,
-th,
-thead,
-tr {
-  border-style: none;
-} */
-
-/* new  */
-thead {
-  position: sticky;
-  top: 0;
-  background: #fff;
-  z-index: 1;
-}
-th,
-td {
-  white-space: nowrap;
-}
-
 .mandatory {
   color: red;
 }
-.table_check {
-  line-height: 100%;
-}
-.w_3 {
-  width: 3%;
-}
 
+.hide {
+  display: none;
+}
 /*xxxxxxxxxxxxxxxxxxxxxxxxxx
  Common Css End 
  xxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 
-/*============================
- Button pert start  
- =============================*/
+/*============================ Button pert start   =============================*/
 .btn {
   font-family: var(--roboto);
-  font-weight: 400;
   font-size: 12px;
-  color: #ffffff;
+  color: var(--white-color);
   border-radius: 5px;
   background: #017e84;
   margin: 0 2px;
   padding: 5px 15px;
-  letter-spacing: 1px;
   font-weight: 500;
   border: none;
   transition: all linear 0.3s;
@@ -126,7 +82,7 @@ td {
 
 .btn:hover {
   background: #017e84;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .export-btn,
@@ -134,19 +90,19 @@ td {
 .export-btn:focus,
 .filter-btn:focus {
   background: #2c3e50;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .export-btn:hover,
 .filter-btn:hover {
   background: #192633;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .search-btn,
 .search-btn:focus {
   background: #dd636e;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .search-btn:hover {
@@ -156,46 +112,42 @@ td {
 .import-btn,
 .import-btn:focus {
   background: #666666;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .import-btn:hover {
   background: #3f3f3f;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .discard-btn,
 .discard-btn:focus {
   background: #f8425f;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .discard-btn:hover {
   background: #f72145;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .save-btn,
 .create-btn,
 .save-btn:focus,
 .create-btn:focus {
-  background: #3094fa;
-  color: #fff;
+  background: var(--secendary-main-color);
+  color: var(--white-color);
 }
 
 .create-btn:hover,
 .save-btn:hover {
   background: #117fec;
-  color: #fff;
+  color: var(--white-color);
 }
 
-/*xxxxxxxxxxxxxxxxxxxxxxxxx 
-Button pert end  
-xxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*============================= Button pert end  ===========================*/
 
-/*==============================
- Bootstrap css customaize  start 
- ==============================*/
+/*============================== Bootstrap css customaize  start ==============================*/
 .row {
   --bs-gutter-x: 0;
 }
@@ -208,7 +160,8 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 .navbar-brand {
   margin-right: 0.5rem;
 }
-/* form pert  */
+
+/******************* form pert  ***************/
 .form-control {
   background-color: #edf0f4;
   border: none;
@@ -218,7 +171,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 
 .form-control:focus {
   background-color: #edf0f4;
-  box-shadow: 0 0 0 2px rgba(0, 102, 255, 0.548);
+  box-shadow: 0 0 0 2px #0066ff8c;
 }
 .form-label,
 .details-label {
@@ -250,37 +203,22 @@ h6 {
 p {
   margin-bottom: 0;
 }
-.sd {
-  position: fixed;
-  top: 91px;
-  left: 0;
-}
-.mc {
-  position: absolute;
-  right: 0;
-  z-index: -1;
-}
 
 /* bootstrap css customaize  end*/
 
-/*=============================
- Start Navbar Css  
- ===============================*/
-
-/* new  */
-.navbar_left,
-.navbar_right {
-  justify-content: space-between;
-  display: flex;
-  align-items: center;
-}
-
-/* new end  */
+/*============================= Start Navbar Css ===============================*/
 
 .navbar {
   background: var(--main-color);
   color: var(--white-color);
   padding: 0;
+}
+
+.navbar_left,
+.navbar_right {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
 }
 
 .nav-link {
@@ -333,25 +271,113 @@ p {
   height: 3.5rem;
 }
 
-.dropdown-toggle {
-  background: none;
-  border: none;
-}
+/*=========================== End Navbar Css =============================*/
 
-.dropdown-toggle::after {
-  border: none;
-}
-
-/* End Navbar Css  */
-
-.main {
-  width: 100%;
-  margin-top: 6.5rem;
-  position: absolute;
+/*======================= Top item css Start =========================*/
+.topbar {
+  position: fixed;
+  top: 3.4rem;
+  left: 0;
+  right: 0;
+  background: #f4f5f7;
   display: flex;
+  justify-content: space-between;
+  height: 3rem;
+  z-index: 1;
+  margin-right: 5px;
 }
 
-/* Sidebar  css start  */
+.tb_title,
+.tb_item {
+  margin: auto 0;
+}
+
+.tb_breadcrump {
+  width: 35rem;
+}
+
+.tb_item {
+  line-height: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.tb_title {
+  width: 18rem;
+  text-align: center;
+  background: var(--white-color);
+  overflow: hidden;
+  transition: all linear 0.4s;
+  white-space: nowrap;
+}
+
+.tb_title_hide {
+  width: 0 !important;
+}
+
+.tb_title h4 {
+  line-height: 3rem;
+  color: var(--secendary-main-color);
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+.top-item {
+  display: flex;
+  justify-content: end;
+}
+
+.top-item li {
+  position: relative;
+}
+
+.search-input {
+  position: absolute;
+  top: 0;
+  right: 50px;
+  display: none;
+}
+
+.search-input input {
+  position: relative;
+  border-radius: 8px;
+  width: 14rem;
+  font-size: 0.75rem;
+  padding: 0.3rem 0rem 0.3rem 2.4rem;
+  border: none;
+  color: #6a6a6a;
+  height: 2.7rem;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+/********** bread cump  **************/
+.breadcrumb {
+  margin: auto;
+  line-height: 3rem;
+  padding-left: 1.2rem;
+}
+.breadcrumb-item.active,
+.breadcrumb-item {
+  color: var(--main-color);
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  color: var(--main-color);
+}
+
+/*================================== Topbar End ============================*/
+
+/*=================== Sidebar  css start  ====================*/
 .sidebar {
   transition: all linear 0.3s;
 }
@@ -380,7 +406,7 @@ p {
   overflow: hidden;
 }
 
-/* icon background  */
+/* icon background  (it use  for deffrent menu item deffrent color)*/
 .sidebar ul li:nth-child(1) .sidebar-icon {
   background: #c5dcfa;
   color: #0f56b3;
@@ -410,23 +436,6 @@ p {
   color: #fbfdff;
 }
 
-/* Sidebar css end  */
-
-/* content css start  */
-.content {
-  background: #fff;
-  width: 100%;
-  display: flex;
-  height: 85vh;
-  overflow: auto;
-}
-
-/* content css end  */
-
-/*================================= 
-Sidebar Css Start  
-===================================*/
-
 .sidebar-item a {
   display: flex;
   text-decoration: none;
@@ -442,109 +451,40 @@ Sidebar Css Start
   background: rgba(222, 238, 255, 0.7);
 }
 
-/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
- Sidebar Css End  
- xxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*============================= Sidebar css end  =============================*/
 
-/*=======================
- Top item css Start  
-=========================*/
-.topbar {
-  position: fixed;
-  top: 3.4rem;
-  left: 0;
-  right: 0;
-  background: #f4f5f7;
+/*======================= Main Start  ==========================*/
+
+.main {
+  width: 100%;
+  margin-top: 6.5rem;
+  position: absolute;
   display: flex;
-  justify-content: space-between;
-  height: 3rem;
-  z-index: 1;
-  margin-right: 5px;
 }
-.tb_title,
-.tb_item {
-  margin: auto 0;
-}
-.tb_breadcrump {
-  width: 35rem;
-}
-.tb_item {
-  line-height: 3rem;
+
+.content {
+  background: var(--white-color);
   width: 100%;
   display: flex;
-  justify-content: end;
-}
-
-.tb_title {
-  width: 18rem;
-  text-align: center;
-  background: #fff;
-  overflow: hidden;
-  transition: all linear 0.4s;
-  white-space: nowrap;
-}
-.tb_title_hide {
-  width: 0;
-}
-
-.tb_title h4 {
-  line-height: 3rem;
-  color: #3094fa;
-  font-weight: 600;
-  font-size: 1.7rem;
-}
-
-.top-item {
-  display: flex;
-  justify-content: end;
-}
-
-.top-item li {
-  position: relative;
-}
-.search-input {
-  position: absolute;
-  top: 0;
-  right: 50px;
-  display: none;
-}
-
-.search-input input {
-  position: relative;
-  border-radius: 8px;
-  width: 14rem;
-  font-size: 0.75rem;
-  padding: 0.3rem 0rem 0.3rem 2.4rem;
-  border: none;
-  color: #6a6a6a;
-  height: 2.7rem;
-}
-.search-icon {
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  transform: translateY(-50%);
-}
-
-/* main content css start  */
-.main-content {
-  background: var(--white-color);
+  height: 81vh;
   overflow: auto;
-  height: 100vh;
-}
-.table-main-content {
-  background-color: var(--white-color);
 }
 
-/*===================== table css start  ===================*/
+.table_section {
+  width: 100%;
+}
+
+/*============================ content css end ================================ */
+
+/*===================== Table css start  ===================*/
 table td,
 .table-striped > tbody > tr:nth-of-type(2n + 1) > * {
-  color: #49545c;
+  color: var(--ass-color);
   font-size: 0.75rem;
   vertical-align: middle;
 }
 table th {
-  color: #49545c;
+  color: var(--ass-color);
   font-size: 0.75rem;
   font-weight: 600;
 }
@@ -552,14 +492,39 @@ table th {
   width: 50px;
 }
 
+thead {
+  position: sticky;
+  top: 0;
+  background: var(--white-color);
+  z-index: 1;
+}
+th,
+td {
+  white-space: nowrap;
+}
+
+.table_check {
+  line-height: 100%;
+  width: 3%;
+}
+
+.check_box {
+  width: 0.9rem;
+  height: 0.9rem;
+}
+
+.w_3 {
+  width: 3%;
+}
+
 .table-icon {
   text-align: center;
-  color: #3094fa;
+  color: var(--secendary-main-color);
 }
 .fa-paperclip,
 .fa-pen,
 .fa-angle-down {
-  color: #3094fa;
+  color: var(--secendary-main-color);
   cursor: pointer;
 }
 
@@ -568,7 +533,15 @@ table th {
   color: rgb(83, 83, 83);
 }
 
-/* remove table scroll bar  */
+.dropdown-toggle {
+  background: none;
+  border: none;
+}
+
+.dropdown-toggle::after {
+  border: none;
+}
+/* table scroll bar vertical */
 ::-webkit-scrollbar {
   width: 3px;
 }
@@ -576,9 +549,11 @@ table th {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #0048ff;
+  background-color: var(--main-color);
   border-radius: 20px;
 }
+
+/* table scroll bar horijental */
 
 ::-webkit-scrollbar:horizontal {
   height: 3px;
@@ -587,38 +562,29 @@ table th {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 ::-webkit-scrollbar-thumb:horizontal {
-  background-color: #0048ff;
+  background-color: var(--main-color);
   border-radius: 20px;
 }
 
-/*================= bread cump  ====================*/
-.breadcrumb {
-  margin: auto;
-  line-height: 3rem;
-  padding-left: 1.2rem;
-}
-.breadcrumb-item.active,
-.breadcrumb-item {
-  color: #0066ff;
-  text-decoration: underline;
-  font-weight: 500;
-  font-size: 13px;
-  cursor: pointer;
-}
-.breadcrumb-item + .breadcrumb-item::before {
-  color: #0066ff;
-}
-
 /*=================== form css start  ====================*/
-.first-input {
-  margin-left: 35px;
+.form_section {
+  display: flex;
+  margin: 2%;
+  width: 100%;
+}
+.form_col {
+  width: 33.33%;
+  margin: 0 4%;
 }
 
+.form_item {
+  padding-bottom: 7%;
+}
 .image-update img {
   border: 1px solid black;
   border-radius: 50%;
-  height: 55px;
-  width: 55px;
+  height: 3.43rem;
+  width: 3.43rem;
   margin-bottom: 10px;
 }
 .image-update p {
@@ -626,10 +592,13 @@ table th {
   font-size: 13px;
   font-weight: 500;
 }
+.details-value {
+  font-size: 0.9rem;
+}
 
 /*==================== Pagination ===================  */
 .pagination {
-  background: #fff;
+  background: var(--white-color);
   position: fixed;
   bottom: 0px;
   padding: 5px 0;
@@ -647,55 +616,30 @@ table th {
 .pagination button {
   border: none;
   background: transparent;
-  font-size: 13px;
+  font-size: 1rem;
   cursor: normal;
   margin: 0 3px;
 }
 .pagination .next,
 .pagination .prev {
-  background: #06f;
-  color: #fff;
+  background: var(--main-color);
+  color: var(--white-color);
   padding: 3px 13px;
   border-radius: 3px;
 }
 
-.details-value {
-  font-size: 12px;
+/*============================ Modal Start  =============================*/
+
+.modal-title {
+  color: var(--secendary-main-color);
 }
 
-/* new  */
-.form_section {
-  display: flex;
-  margin: 2%;
-  width: 100%;
-}
-.form_col {
-  width: 33.33%;
-  margin: 0 4%;
+.modal-content .btn-close:focus {
+  box-shadow: none;
 }
 
-.form_item {
-  padding-bottom: 7%;
-}
-.hide {
-  display: none;
+.filter_input {
+  margin: 0 1.5rem 2rem;
 }
 
-.table_section {
-  width: 100%;
-}
-.check_box {
-  width: 0.9rem;
-  height: 0.9rem;
-}
-
-/* .modal.show .modal-dialog {
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.modal.fade .modal-dialog {
-  transition: transform 0.3s ease-out;
-  transform: translate(0, -50%);
-  top: 50%;
-} */
+/*============================== Modal End ============================== */
