@@ -25,9 +25,4 @@ $(document).ready(function () {
   $(".search-btn").click(function () {
     $(".search-input").toggle();
   });
-
-  // use for profile image clcik and profile card
-  $(".profile-image").click(function () {
-    $(".profile_card").toggleClass("d-block", 300);
-  });
 });

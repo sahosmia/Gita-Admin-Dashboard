@@ -53,50 +53,107 @@
         </div>
         <!-- navbar right  -->
         <div class="navbar_right">
-          <span class="navbar_bar"><i class="fas fa-bars"></i></span>
-          <span class="bel"><i class="fa-regular fa-bell"></i></span>
-          <img
-            src="images/profile.png"
-            alt=""
-            class="img-fluid profile-image w-100"
-          />
-          <div class="profile_card">
-            <ul class="auth_card">
-              <li class="auth_img">
-                <img src="images/profile.png" width="48" />
-              </li>
-              <li class="auth_name">
-                <h3>Sahos Mia</h3>
-              </li>
-              <li class="auth_email">
-                <p>sahos@gmail.com</p>
-              </li>
+          <!-- dark mode -->
+          <div class="dark">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+          </div>
+
+          <!-- language view swith  -->
+          <div>
+            <div class="form-check form-switch">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="flexSwitchCheckDefault"
+              />
+              <label class="form-check-label" for="flexSwitchCheckDefault"
+                >ENG</label
+              >
+            </div>
+          </div>
+
+          <!-- Mobile view menu bar  -->
+          <div>
+            <span class="navbar_bar"><i class="fas fa-bars"></i></span>
+          </div>
+
+          <!-- Notification div start  -->
+          <div class="dropdown">
+            <button
+              class="dropdown-toggle bel"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fa-regular fa-bell"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
-            <ul class="pl_0">
-              <li class="auth_option">
-                <a class="auth_option_item" href="#"
-                  ><i class="fas fa-user-plus"></i> Add another account</a
-                >
+          </div>
+
+          <!-- profile image div start  -->
+
+          <div class="dropdown">
+            <button
+              class="dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="images/profile.png"
+                alt=""
+                class="img-fluid profile-image w-100"
+              />
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end profile_card">
+              <li class="dropdown-item">
+                <ul class="auth_card">
+                  <li class="auth_img">
+                    <img src="images/profile.png" width="48" />
+                  </li>
+                  <li class="auth_name">
+                    <h3>Sahos Mia</h3>
+                  </li>
+                  <li class="auth_email">
+                    <p>sahos@gmail.com</p>
+                  </li>
+                </ul>
               </li>
-              <li class="auth_option">
-                <a class="auth_option_item" to="/core/profile-details">
-                  <i class="fas fa-user"></i> Profile Information
-                </a>
+              <li class="dropdown-item">
+                <ul class="pl_0">
+                  <li class="auth_option">
+                    <a class="auth_option_item" href="#"
+                      ><i class="fas fa-user-plus"></i> Add another account</a
+                    >
+                  </li>
+                  <li class="auth_option">
+                    <a class="auth_option_item" to="/core/profile-details">
+                      <i class="fas fa-user"></i> Profile Information
+                    </a>
+                  </li>
+                  <li class="auth_option">
+                    <a class="auth_option_item" to="/core/profile-update">
+                      <i class="fas fa-edit"></i> Update Profile
+                    </a>
+                  </li>
+                  <li class="auth_option">
+                    <a class="auth_option_item" to="/core/password-change">
+                      <i class="fas fa-key"></i> Change password
+                    </a>
+                  </li>
+                </ul>
               </li>
-              <li class="auth_option">
-                <a class="auth_option_item" to="/core/profile-update">
-                  <i class="fas fa-edit"></i> Update Profile
-                </a>
-              </li>
-              <li class="auth_option">
-                <a class="auth_option_item" to="/core/password-change">
-                  <i class="fas fa-key"></i> Change password
-                </a>
-              </li>
-            </ul>
-            <ul class="auth_card pt_15 mb-2">
-              <li class="auth_email">
-                <button type="button" class="sign_out_btn">Sign Out</button>
+              <li class="dropdown-item">
+                <ul class="auth_card pt_15 mb-2">
+                  <li class="auth_email">
+                    <button type="button" class="sign_out_btn">Sign Out</button>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
